@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="description" content="A presentation introducing R for LSDG meeting">
+		<meta name="author" content="Jonathan Adams">
+
+		<link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="node_modules/reveal.js/css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <!--Slide 1-->
+                <section>
+                    <h3>Introduction to R</h3>
+                    <p>Jonathan Adams</p>
+                    <p>LSDG</p>
+                </section>
+
+                <!--Slide 2-->
+                <section>
+                    <h3>History</h3>
+                    <!--Slide 2.1-->
+                    <section>
+                        <ul>
+                            <li>
+                                R began as the S programming language
+                                <ul>
+                                    <li>Developed at Bell Labs in the mid-1970s by John Chambers</li>
+                                    <li>Goal was to quickly analyze and visualize project data</li>
+                                    <li>Interpreted language designed to wrap and/or replace Fortran routines</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!--Slide 2.2-->
+                    <section>
+                        <ul>
+                            <li>
+                                S programming language independently rewritten after breakup of AT&T
+                                <ul>
+                                    <li>This rewrite known as the R programming language</li>
+                                    <li>Development and initial release occurred in the early-1990s</li>
+                                    <li>Created as an open source project with GPL license</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!--Slide 2.3-->
+                    <section>
+                        <ul>
+                            <li>R has become popular in the statistics community</li>
+                                <!--TODO: Mention how new stats research usually gets an R package-->
+                            <li>R has been slowly overtaking proprietary SAS software</li>
+                            <li>Commercial/Enterprise support provided by multiple companies</li>
+                            <ul>
+                                <li>Revolution Analytics and RStudio among biggest names</li>
+                            </ul>
+                            <li>R Consortium formed in 2015 to guide future of R language</li>
+                            <ul>
+                                <li>Members include IBM, Microsoft, RStudio, Google, and Oracle</li>
+                            </ul>
+                        </ul>
+                    </section>
+                </section>
+
+                <!--Slide 3-->
+                <section>
+                    <h3>Features</h3>
+                    <!--Slide 3.1-->
+                    <section>
+                        <ul>
+                            <li>
+                                Tools for building models and visualizing data
+                                <ul>
+                                    <li>Can build linear models, non-linear models, machine learning models, time series models, etc...</li>
+                                    <li>Various graphics libraries including base plot and added package ggplot2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!--Slide 3.2-->
+                    <section>
+                        <ul>
+                            <li>
+                                Package management system for sharing code
+                                <ul>
+                                    <li>Known as Comprehensive R Archive Network (CRAN)</li>
+                                    <li>Currently contains more than 12,000 packages</li>
+                                    <li>Packages cover many topics such as statistics, graphics, finance, economics, physics, etc...</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!--Slide 3.3-->
+                    <section>
+                        <ul>
+                            <li>
+                                IDE created by RStudio (named RStudio of course)
+                                <ul>
+                                    <li>Provides code highlighting</li>
+                                    <li>Provides git integration</li>
+                                    <li>Provides tools to facilitate package development, including documenting and testing</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!--Slide 3.4-->
+                    <section>
+                        <ul>
+                            <li>
+                                Web framework created by RStudio (not named RStudio but Shiny)
+                                <ul>
+                                    <li>Combines web client and server-side javascript engine with R</li>
+                                    <li>Allows client to display R plots and make calls to R for calculations</li>
+                                    <li>Packages available to provide CSS and Javascript wrappers for libraries such as Bootstrap and D3.js</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!--Slide 3.5-->
+                    <section>
+                        <ul>
+                            <li>
+                                Integration with Microsoft products
+                                <ul>
+                                    <li>Revolution Analytics purchased by Microsoft in 2015</li>
+                                    <li>R integrated with MSSQL starting in 2016</li>
+                                    <li>Helping power Cortana Intelligence in Azure</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+
+                <!--Slide 4-->
+                <section>
+                    <h3>Code Example Summary</h3>
+                    <ul>
+                        <li>
+                            Plotting Data
+                            <ul>
+                                <li>Base Graphics</li> <!-- Show some simple scatter plots. Also plot some data and some models with fits and predictions -->
+                                <li>ggplot2</li> <!-- Show same plots and how ggplot2 can use custom themes. Migrate to plotting geometries -->
+                            </ul>
+                        </li>
+                        <li>
+                            Shiny
+                            <ul>
+                                <li>Dashboards</li> <!-- Show a dashboard that can query and plot shapes and data from database -->
+                                <li>Apps</li> <!-- Show simple credit risk model in Shiny app -->
+                            </ul>
+                        </li>
+                        <li>
+                            R as a Service
+                            <ul>
+                                <li>OpenCPU/Microsoft DeployR</li> <!-- Extend credit risk model to web page that calls credit risk model with REST call -->
+                                <li>R Minions</li> <!-- Show same model and deploying other models. Then show the steal-the-moon simulation and scaling -->
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <!--Show console and sample plots-->
+                <!--Show simple Shiny app (maybe)-->
+                <!--Show R as a service using OpenCPU-->
+                <!--Show R as a service using rminions-->
+                <!--Slide 5-->
+                <section>
+                    <h3>Questions?</h3>
+                </section>
+			</div>
+		</div>
+
+		<script src="node_modules/reveal.js/lib/js/head.min.js"></script>
+		<script src="node_modules/reveal.js/js/reveal.js"></script>
+        <script src="node_modules/reveal.js/plugin/math/math.js"></script>
+
+		<script>
+			Reveal.initialize({
+                src: "node_modules/reveal.js/plugin/math/math.js",
+                async: true
+            });
+		</script>
+
+	</body>
+</html>
